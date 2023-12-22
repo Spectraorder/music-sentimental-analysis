@@ -44,15 +44,6 @@ def extract_musical_traits(filename):
     }
 
     return traits
-    # print("Extracted Musical Traits:")
-    # print(f"Tempo: {tempo_str} BPM")
-    # print(f"Spectral Centroid: {spectral_centroid_str} Hz")
-    # print(f"Spectral Bandwidth: {spectral_bandwidth_str} Hz")
-    # print(f"Chroma Features: {chroma_stft_str}")
-    # print(f"Zero Crossing Rate: {zero_crossing_rate_str}%")
-    #
-    # df = pd.DataFrame(data, index=[0])
-    # df.to_csv("musical_traits.csv", index=False)
 
 
 def process_audio_files(folder_path):
@@ -84,6 +75,5 @@ def process_audio_files(folder_path):
     print(result_df)
 
 
-# Example usage
 folder_path = '../Dataset/'
 process_audio_files(folder_path)
